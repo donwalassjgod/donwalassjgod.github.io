@@ -21,7 +21,7 @@ h1 {
 }
 
 img {
-  width: 120px; /* Tamaño uniforme */
+  width: 150px; /* Tamaño uniforme */
   height: auto;
   mix-blend-mode: multiply;
   clip-path: circle(50%);

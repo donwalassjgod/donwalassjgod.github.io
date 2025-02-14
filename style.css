@@ -10,32 +10,31 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  gap: 30px; /* Reducido para mejor ajuste en móviles */
-  padding: 10px;
+  gap: 60px; /* Espaciado entre los elementos */
+  padding: 20px;
   margin: 0;
 }
 
 h1 {
-  font-size: 24px; /* Tamaño reducido en móviles */
+  font-size: 30px;
   text-align: center;
 }
 
 img {
-  width: 120px; /* Tamaño ajustado */
+  width: 150px; /* Tamaño uniforme */
   height: auto;
   mix-blend-mode: multiply;
   clip-path: circle(50%);
 }
 
-/* Formulario */
 .formulario {
   grid-area: form;
   font-family: "Roboto", sans-serif;
   background-color: rgb(200, 255, 200);
   min-height: 220px;
   width: 100%;
-  max-width: 360px;
-  padding: 15px;
+  max-width: 400px;
+  padding: 20px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -43,9 +42,8 @@ img {
   justify-content: center;
 }
 
-/* Botón */
 .btn-1 {
-  font-size: 20px;
+  font-size: 24px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -58,37 +56,34 @@ img {
   text-align: center;
 }
 
-/* 📱 Media Query para pantallas pequeñas (Móviles) */
+/* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
   body {
     grid-template-areas:
-      "img1 img2"
-      "img3 form"
-      "img4 img5"
-      "img6 img7";
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto auto auto;
-    gap: 20px;
-    height: auto;
-    padding: 20px;
-  }
-
-  img {
-    width: 100px; /* Hacer las imágenes más pequeñas */
-  }
-
-  .formulario {
-    max-width: 300px;
+      "img1"
+      "form"
+      "img2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px; /* Reducir el espaciado entre los elementos */
     padding: 10px;
   }
 
+  .formulario {
+    width: 90%; /* Ajustar el ancho del formulario para móviles */
+    max-width: none;
+  }
+
+  img {
+    width: 100px; /* Reducir el tamaño de las imágenes para móviles */
+  }
+
   h1 {
-    font-size: 22px;
+    font-size: 24px; /* Reducir el tamaño de la fuente para móviles */
   }
 
   .btn-1 {
-    font-size: 18px;
+    font-size: 20px; /* Reducir el tamaño de la fuente del botón para móviles */
     padding: 8px 16px;
   }
 }
-

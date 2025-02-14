@@ -13,7 +13,6 @@ body {
   gap: 60px; /* Espaciado entre los elementos */
   padding: 20px;
   margin: 0;
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 h1 {
@@ -22,7 +21,7 @@ h1 {
 }
 
 img {
-  width: 125px; /* Tamaño uniforme */
+  width: 100px; /* Tamaño uniforme */
   height: auto;
   mix-blend-mode: multiply;
   clip-path: circle(50%);
@@ -41,7 +40,6 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto; /* Centra el formulario horizontalmente */
 }
 
 .btn-1 {
@@ -69,14 +67,11 @@ img {
     grid-template-rows: auto auto auto;
     gap: 20px; /* Reducir el espaciado entre los elementos */
     padding: 10px;
-    height: auto; /* Ajustar la altura para móviles */
-    min-height: 100vh; /* Asegura que el body ocupe al menos toda la pantalla */
   }
 
   .formulario {
     width: 90%; /* Ajustar el ancho del formulario para móviles */
     max-width: none;
-    margin: 0 auto; /* Centra el formulario horizontalmente */
   }
 
   img {

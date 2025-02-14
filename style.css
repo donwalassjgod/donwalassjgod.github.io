@@ -2,9 +2,9 @@ body {
   background-color: rgb(255, 255, 128);
   display: grid;
   grid-template-areas:
-    "img1 img2 img3"
-    "img4 form img5"
-    "img6 img7 img8";
+  "img1 img2 img3"
+  "img4 form img5"
+  "img6 img7 img8";
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: auto auto auto;
   justify-content: center;
@@ -21,10 +21,11 @@ h1 {
 }
 
 img {
-  width: 100px; /* Tamaño uniforme */
+  width: 120px; /* Tamaño uniforme */
   height: auto;
   mix-blend-mode: multiply;
   clip-path: circle(50%);
+
 }
 
 .formulario {
@@ -54,36 +55,4 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-/* Media Queries para dispositivos móviles */
-@media (max-width: 768px) {
-  body {
-    grid-template-areas:
-      "img1"
-      "form"
-      "img2";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 20px; /* Reducir el espaciado entre los elementos */
-    padding: 10px;
-  }
-
-  .formulario {
-    width: 90%; /* Ajustar el ancho del formulario para móviles */
-    max-width: none;
-  }
-
-  img {
-    width: 100px; /* Reducir el tamaño de las imágenes para móviles */
-  }
-
-  h1 {
-    font-size: 24px; /* Reducir el tamaño de la fuente para móviles */
-  }
-
-  .btn-1 {
-    font-size: 20px; /* Reducir el tamaño de la fuente del botón para móviles */
-    padding: 8px 16px;
-  }
 }
